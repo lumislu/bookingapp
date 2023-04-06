@@ -1,0 +1,213 @@
+.header {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  padding: 0px 20px;
+  position: relative;
+  .headerContainer {
+    color: white;
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 100px 0px;
+    .headerTitle {
+      font-size: 45px;
+    }
+    .headerDes {
+      margin-top: 10px;
+    }
+    .headerSearchBar {
+      position: absolute;
+      bottom: -30px;
+      height: 55px;
+      width: 95%;
+      max-width: 1024px;
+      display: flex;
+      align-items: center;
+      background-color: rgb(223, 130, 0);
+      border: none;
+      border-radius: 5px;
+      svg {
+        color: lightgray;
+        font-size: 24px;
+        margin-left: 10px;
+      }
+      input {
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 16px;
+        text-overflow: ellipsis;
+      }
+      .SearchBarItem:first-child {
+        width: calc(34% - 20px);
+      }
+      .SearchBarItem {
+        height: 50px;
+        width: 320px;
+        margin-left: 2px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: black;
+        background-color: #fff;
+        border-radius: 2px;
+        cursor: pointer;
+        .calendar {
+          position: absolute;
+          top: 56px;
+          border: 1px lightgray solid;
+          box-shadow: 0px 0px 15px lightgray;
+        }
+        .ConditionsContainer {
+          position: absolute; //一樣絕對定位
+          top: 60px;
+          right: 0;
+          width: auto;
+          background-color: white;
+          box-shadow: 0px 0px 15px lightgray;
+          border-radius: 5px;
+          padding: 10px 40px;
+          cursor: default; //靜止他一靠近就變point
+          .condition {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 400px;
+            height: 60px;
+            p {
+              font-size: 14px;
+              color: gray;
+            }
+            .conditionCounter {
+              display: flex;
+              width: 100px;
+              justify-content: space-between;
+              align-items: center;
+              .conditionCounterButton {
+                width: 30px;
+                height: 30px;
+                border-radius: 2px;
+                color: var(--primary-color);
+                background-color: white;
+                border: 1px solid var(--primary-color);
+                cursor: pointer;
+                &:hover {
+                  background-color: rgba(53, 164, 127, 0.1);
+                }
+                &:disabled {
+                  cursor: not-allowed;
+                }
+              }
+            }
+          }
+        }
+      }
+      .SearchBarBtn {
+        border: none;
+        margin: 0px 2px 0px 2px;
+        width: 60px;
+        height: 50px;
+        border-radius: 2px;
+        background-color: var(--primary-color);
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header .headerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .headerSearchBar {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      height: auto;
+      background-color: var(--primary-color);
+
+      .SearchBarItem:first-child {
+        width: 100%;
+      }
+      svg {
+        width: 30px;
+      }
+      input {
+        width: 80%;
+      }
+      .SearchBarItem {
+        width: 100%;
+        margin: 5px 0;
+        gap: 15px;
+        display: flex;
+        border-radius: 5px;
+
+        .calendar {
+          position: absolute;
+          top: 120px;
+          box-shadow: 0px 0px 15px lightgray;
+        }
+      }
+      .SearchBarBtn {
+        border: 1px solid white;
+        margin-top: 20px;
+        width: 150px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: var(--primary-color);
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.15);
+        }
+      }
+      .headerSearchBar {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: auto;
+        background-color: var(--primary-color);
+
+        .SearchBarItem:first-child {
+          width: 320px;
+        }
+        svg {
+          width: 30px;
+        }
+        input {
+          width: 80%;
+        }
+        .SearchBarItem {
+          margin: 5px 0;
+          gap: 15px;
+          display: flex;
+          border-radius: 5px;
+
+          .calendar {
+            position: absolute;
+            top: 120px;
+            box-shadow: 0px 0px 15px lightgray;
+          }
+        }
+        .SearchBarBtn {
+          border: 1px solid white;
+          margin-top: 20px;
+          width: 150px;
+          height: 50px;
+          border-radius: 50px;
+          background-color: var(--primary-color);
+          color: white;
+          font-size: 16px;
+          cursor: pointer;
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.CardContainer {
+  display: flex;
+  padding: 5px;
+  flex: 1;
+  position: relative;
+  .imgBg {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+  }
+  .itemInfo {
+    position: absolute;
+    top: 12px;
+    left: 22px;
+    color: white;
+    text-shadow: 2px 2px black;
+  }
+}
+@media (max-width: 600px) {
+  .CardContainer {
+    min-width: 200px;
+  }
+}
