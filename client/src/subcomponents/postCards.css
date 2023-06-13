@@ -1,0 +1,9 @@
+.postCards {
+  width: 100%;
+  padding: 10px 0px;
+}
+.postCards .line {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 400px;
+}/*# sourceMappingURL=postCards.css.map */

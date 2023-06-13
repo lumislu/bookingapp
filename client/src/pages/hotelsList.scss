@@ -1,0 +1,109 @@
+.listContainer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+.listSearch {
+  background-color: hsl(30, 100%, 77%);
+  padding: 15px;
+  border-radius: 6px;
+  min-width: 375px;
+  height: max-content;
+  .searchTitle {
+    background-color: #fd8915c6;
+    padding: 10px 10px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+.listItem {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+  .searchInput {
+    border: none;
+    padding: 10px 15px;
+    margin-top: 5px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: normal;
+    width: 100%;
+    &:focus {
+      outline: 0;
+      box-shadow: 0px 0px 4px rgb(0, 230, 255);
+    }
+  }
+  .dates {
+    background-color: #fff;
+    border-radius: 4px;
+  }
+  .searchbtn {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    background-color: rgb(53, 164, 127);
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(15, 130, 92);
+    }
+  }
+  .listItemLimitPrice {
+    width: 100%;
+    .limitTitle {
+      width: 100%;
+    }
+  }
+}
+.listItemConditions {
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 10px 15px;
+}
+
+.resultTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  .map {
+    padding: 15px 25px;
+    border-radius: 2px;
+    background-image: url("https://cf.bstatic.com/psb/capla/static/media/map-entry-point.6b01012a.png");
+    overflow: hidden;
+
+    button {
+      padding: 8px 15px;
+      border: none;
+      color: white;
+      background-color: var(--primary-color);
+      &:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+    }
+    &:hover {
+      transform: scale(1.05);
+      transition: 0.2s ease-in;
+      opacity: 0.9;
+      cursor: pointer;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .listContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .listSearch {
+    display: inline-block;
+    height: max-content;
+    background-color: hsl(30, 100%, 77%);
+  }
+}

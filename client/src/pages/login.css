@@ -1,0 +1,31 @@
+.login .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+.login .container .wrapper {
+  margin-top: 20vh;
+}
+.login .container .wrapper .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.login .container .wrapper .form input {
+  padding: 10px 10px;
+  width: 300px;
+}
+.login .container .wrapper .form button {
+  height: 30px;
+  border-radius: 2px;
+  color: white;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+}
+.login .container .wrapper .form button:hover {
+  color: var(--primary-color);
+  background-color: rgba(53, 164, 127, 0.1);
+}/*# sourceMappingURL=login.css.map */

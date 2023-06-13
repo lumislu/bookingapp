@@ -1,0 +1,90 @@
+.footer {
+  margin-top: 50px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+.footer .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 300;
+  font-size: 18px;
+  color: #fff;
+}
+.footer .title span {
+  color: rgb(58, 58, 58);
+  font-size: 14px;
+}
+.footer .emailcontainer {
+  padding: 25px 50px;
+  max-width: 1024px;
+  width: 100%;
+}
+.footer .emailcontainer .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.footer .emailcontainer .wrapper .email {
+  width: 70%;
+  height: 40px;
+  border-radius: 4px;
+  padding: 5px 15px;
+  font-size: 16px;
+  border: none;
+}
+.footer .emailcontainer .wrapper .sub {
+  width: 30%;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  background-color: var(--primary-dark-color);
+  cursor: pointer;
+}
+.footer .emailcontainer .wrapper .sub:hover {
+  background-color: var(--hover-color);
+  color: var(--primary-dark-color);
+}
+.footer .emailcontainer .checktext {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.footer .emailcontainer .checktext input {
+  width: 20px;
+}
+.footer .subcontainer {
+  width: 100%;
+  padding: 30px 0px 20px 0px;
+  text-align: center;
+  background-color: var(--primary-dark-color);
+}
+.footer .subcontainer button {
+  background: transparent;
+  padding: 10px 25px;
+  color: #fff;
+  font-weight: 300;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.footer .subcontainer button:hover {
+  background-color: var(--hover-color);
+}
+.footer .subcontainer hr {
+  margin: 20px 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer .subcontainer ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}/*# sourceMappingURL=footer.css.map */

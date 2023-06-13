@@ -1,0 +1,252 @@
+.HotelContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.HotelWrapper {
+  max-width: 1024px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.HotelHeaderBtn {
+  display: flex;
+  gap: 5px;
+}
+.HotelHeaderBtn button {
+  border: none;
+  background-color: #e4f9ed;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 16px;
+  color: rgb(11, 92, 34);
+  cursor: pointer;
+}
+.HotelHeaderBtn button:hover {
+  border: 1px solid var(--primary-color);
+}
+
+.hotelTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+.hotelTitle svg {
+  color: #f65050;
+}
+.hotelTitle .titleLeft span {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.hotelTitle .titleLeft .type {
+  color: white;
+  background-color: #0e7b8e;
+  border-radius: 20px;
+  padding: 2px 10px;
+}
+.hotelTitle .titleLeft .hotelName {
+  font-weight: 600;
+  font-size: 20px;
+}
+.hotelTitle .titleLeft .recommend {
+  line-height: 15px;
+  vertical-align: baseline;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: #e1fae2;
+  font-size: 12px;
+}
+.hotelTitle .titleLeft .recommend svg {
+  width: 15px;
+  height: 15px;
+  padding: 2px;
+  color: var(--primary-color);
+  border-radius: 50%;
+}
+.hotelTitle .titleLeft .address {
+  font-size: 16px;
+}
+.hotelTitle .titleLeft .address a {
+  font-size: 12px;
+  color: rgb(83, 129, 254);
+}
+.hotelTitle .titleRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.hotelTitle .titleRight .reservationBtn {
+  border: none;
+  background-color: var(--primary-color);
+  padding: 5px 20px;
+  font-size: 16px;
+  border-radius: 2px;
+  color: white;
+}
+.hotelTitle .titleRight .reservationBtn:hover {
+  color: black;
+}
+
+.hotelImgWrapper {
+  position: relative;
+}
+.hotelImgWrapper .popupcomment {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+}
+.hotelImgWrapper .popupcomment .commentInfo {
+  display: flex;
+  height: 60px;
+  width: 250px;
+  border-radius: 2px;
+  background-color: #fff;
+  align-items: center;
+  gap: 5px;
+}
+.hotelImgWrapper .popupcomment .commentInfo .commentRate {
+  margin-left: 5px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+.hotelImgWrapper .hotelImg {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+.hotelImgWrapper .hotelImg .Imgwrap:first-child {
+  grid-area: 1/1/3/3;
+}
+.hotelImgWrapper .hotelImg .Imgwrap {
+  position: relative;
+  border-radius: 2px;
+}
+.hotelImgWrapper .hotelImg .Imgwrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+.hotelImgWrapper .hotelImg .more {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+
+.hotelDes {
+  display: flex;
+  gap: 50px;
+  margin-top: 10px;
+}
+.hotelDes .hotelDesText {
+  line-height: 2.5;
+}
+.hotelDes .hotelDesPrice {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 10px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: rgba(53, 164, 127, 0.5);
+}
+.hotelDes .hotelDesPrice button {
+  width: 200px;
+  color: white;
+  font-size: 20px;
+  padding: 5px 10px;
+  border: none;
+  background-color: rgb(53, 164, 127);
+  border-radius: 2px;
+}
+.hotelDes .hotelDesPrice button:hover {
+  color: black;
+}
+
+.slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.613);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider .sliderWrapper {
+  border-radius: 2px;
+  width: 80%;
+  height: 60%;
+  background-color: #fff;
+}
+
+.wrapperTitle {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+.wrapperTitle .TitleName {
+  font-size: 20px;
+  margin: 0 20px;
+}
+.wrapperTitle .CloseSign {
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.wrapperTitle .CloseSign svg {
+  font-size: 30px;
+}
+.wrapperTitle .CloseSign:hover {
+  color: var(--primary-color);
+}
+
+.wrapperBody {
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapperBody img {
+  width: 600px;
+  height: 500px;
+  border-radius: 5px;
+}
+.wrapperBody .arrow {
+  margin: 0 20px;
+  font-size: 40px;
+  color: gray;
+  cursor: pointer;
+}
+.wrapperBody .arrow:hover {
+  color: var(--primary-color);
+}/*# sourceMappingURL=hotel.css.map */

@@ -1,0 +1,43 @@
+.popularHotels {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.popularHotels .item img {
+  width: 200px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+.popularHotels .item .itemInfo .title {
+  font-weight: 700;
+}
+.popularHotels .item .itemInfo .subtitle {
+  color: var(--subtext-color);
+  font-size: 14px;
+}
+.popularHotels .item .itemInfo .price {
+  font-weight: 500;
+  padding: 2px 0;
+}
+.popularHotels .item .itemInfo .rate {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.popularHotels .item .itemInfo .rate p {
+  font-size: 12px;
+  color: var(--subtext-color);
+}
+.popularHotels .item .itemInfo .rate button {
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  width: 45px;
+  height: 30px;
+  font-weight: 500;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+}/*# sourceMappingURL=popularHotels.css.map */

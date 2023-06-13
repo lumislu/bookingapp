@@ -1,0 +1,121 @@
+@-webkit-keyframes skeleton {
+  to {
+    opacity: 0.6;
+  }
+}
+@keyframes skeleton {
+  to {
+    opacity: 0.6;
+  }
+}
+.popularHotelSK {
+  position: relative;
+}
+.popularHotelSK .imgSK {
+  width: 250px;
+  height: 230px;
+  background-color: #ececec;
+  margin-bottom: 2px;
+  -webkit-animation: skeleton 1s ease infinite alternate;
+          animation: skeleton 1s ease infinite alternate;
+}
+.popularHotelSK .InfoSK {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  -webkit-animation: skeleton 1s ease infinite alternate;
+          animation: skeleton 1s ease infinite alternate;
+}
+.popularHotelSK .InfoSK .titleSK {
+  width: 220px;
+  height: 25px;
+  background-color: #ececec;
+  -webkit-animation: skeleton 1s ease infinite alternate;
+          animation: skeleton 1s ease infinite alternate;
+}
+.popularHotelSK .InfoSK .subTitleSK {
+  width: 70px;
+  height: 15px;
+  background-color: #ececec;
+  -webkit-animation: skeleton 1s ease infinite alternate;
+          animation: skeleton 1s ease infinite alternate;
+}
+.popularHotelSK .InfoSK .priceSK {
+  width: 150px;
+  height: 20px;
+  background-color: #ececec;
+  -webkit-animation: skeleton 1s ease infinite alternate;
+          animation: skeleton 1s ease infinite alternate;
+}
+.popularHotelSK .InfoSK .rateAndCommentSK {
+  width: 190px;
+  height: 25px;
+  background-color: #ececec;
+  -webkit-animation: skeleton 1s ease infinite alternate;
+          animation: skeleton 1s ease infinite alternate;
+}
+
+.amountSK {
+  position: relative;
+  width: 150px;
+  height: 30px;
+  background-color: #ececec;
+  -webkit-animation: skeleton 1s ease infinite alternate;
+          animation: skeleton 1s ease infinite alternate;
+}
+
+.animation {
+  border-radius: 3px;
+  background-color: #d8d8d8;
+  -webkit-animation: skeleton 1s ease infinite alternate;
+          animation: skeleton 1s ease infinite alternate;
+}
+
+.SearchItemSK {
+  height: 240px;
+  width: 720px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  background-color: #ececec;
+  -webkit-animation: skeleton 1s ease infinite alternate;
+          animation: skeleton 1s ease infinite alternate;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  gap: 20px;
+}
+.SearchItemSK .imgSK {
+  height: 210px;
+  width: 200px;
+}
+.SearchItemSK .InfoSK {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 8px;
+  height: 210px;
+  width: 480px;
+}
+.SearchItemSK .InfoSK .titleSK {
+  width: 300px;
+  height: 45px;
+}
+.SearchItemSK .InfoSK .subTitleSK {
+  width: 200px;
+  height: 30px;
+}
+.SearchItemSK .InfoSK .decSK {
+  width: 150px;
+  height: 30px;
+}
+.SearchItemSK .InfoSK .rateAndCommentSK {
+  width: 190px;
+  height: 30px;
+}
+.SearchItemSK .InfoSK .priceSK {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: 45px;
+}/*# sourceMappingURL=skeleton.css.map */

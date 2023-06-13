@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+:root {
+  --primary-color: rgb(53, 164, 127);
+  --primary-dark-color: rgb(27, 76, 62);
+  --subtext-color: rgb(123, 121, 121);
+  --hover-color: rgba(255, 255, 255, 0.1);
+}/*# sourceMappingURL=app.css.map */

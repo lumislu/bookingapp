@@ -1,0 +1,241 @@
+.searchItem {
+  box-shadow: 0px 0px 2px rgb(1, 126, 143);
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center center;
+  }
+  .itemInfo {
+    margin-left: 1rem;
+  }
+}
+
+.infoTitle {
+  display: flex;
+  justify-content: space-between;
+  .infoTitleRight {
+    display: flex;
+    align-items: center;
+    .comment {
+      text-align: right;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    .rate {
+      width: 50px;
+      height: 40px;
+      background-color: var(--primary-color);
+      border: none;
+      border-radius: 4px;
+      font-size: 20px;
+      font-weight: 700;
+      color: white;
+    }
+  }
+}
+.infoDes {
+  margin: 20px 0;
+  a {
+    text-decoration: none;
+    border-bottom: 1.5px solid var(--primary-color);
+    color: var(--primary-color);
+  }
+  span {
+    background-color: var(--primary-color);
+    padding: 4px 10px;
+    font-size: 14px;
+    margin: 10px;
+    color: #fff;
+  }
+  .infoDetail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .detailLeft {
+      margin: 1rem 8rem 0 0;
+      border-left: 4px solid rgb(207, 207, 207);
+      padding-left: 0.5rem;
+      p:nth-child(2n + 1) {
+        font-weight: bold;
+      }
+      p:nth-child(3),
+      p:nth-child(4) {
+        color: rgb(20, 151, 25);
+      }
+      p:nth-child(3) {
+        margin-top: 1rem;
+      }
+      p:nth-child(5) {
+        color: red;
+      }
+    }
+    .detailRight {
+      text-align: right;
+      p:nth-child(1) {
+        font-weight: 500;
+      }
+      p:nth-child(2) {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      p:nth-child(3) {
+        color: gray;
+      }
+      .btn {
+        color: #fff;
+        text-decoration: none;
+        border: none;
+        background-color: rgb(239, 123, 73);
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}
+.active {
+  background-color: rgba(53, 164, 127, 0.2);
+  box-shadow: 0px 0px 15px var(--primary-color);
+}
+@media (max-width: 780px) {
+  .searchItem {
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      object-position: center center;
+    }
+    .itemInfo {
+      margin-left: 1rem;
+    }
+  }
+
+  .infoTitle {
+    font-size: 14px;
+  }
+  .infoDes {
+    margin: 0;
+    justify-content: center;
+    a {
+      font-size: 14px;
+    }
+    span {
+      font-size: 12px;
+    }
+    .infoDetail {
+      .detailLeft {
+        margin: 1rem 0rem 0 0;
+        padding-left: 0.5rem;
+
+        p {
+          font-size: 14px;
+        }
+      }
+      .detailRight {
+        text-align: right;
+        p {
+          font-size: 14px;
+        }
+        .btn {
+          margin-left: 10px;
+          button {
+            margin: 5px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .searchItem {
+    min-width: 375px;
+    padding: 0.5rem;
+    border-radius: 0px;
+    margin: 1rem 0;
+    img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      object-position: center center;
+    }
+    a {
+      font-size: 12px;
+    }
+    .itemInfo {
+      margin-left: 1rem;
+    }
+  }
+  .infoTitle {
+    h2 {
+      font-size: 16px;
+    }
+
+    .infoTitleRight {
+      display: flex;
+      flex-direction: column;
+      .comment {
+        display: none;
+      }
+      .rate {
+        width: 40px;
+        height: 30px;
+        font-size: 16px;
+        margin-left: 20px;
+      }
+    }
+  }
+  .infoDes {
+    span {
+      display: none;
+    }
+    .infoDetail {
+      display: flex;
+      flex-direction: column;
+
+      .detailLeft {
+        width: 100%;
+        margin: 0.5rem 0rem 0 0;
+        P {
+          font-size: 12px;
+        }
+        p:nth-child(3) {
+          margin-top: 0.25rem;
+        }
+        p:nth-child(4),
+        p:nth-child(2) {
+          display: none;
+        }
+      }
+      .detailRight {
+        width: 100%;
+        font-size: 14px;
+        p:nth-child(1),
+        p:nth-child(3) {
+          display: none;
+        }
+        p:nth-child(2) {
+          font-size: 16px;
+        }
+        .btn {
+          button {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
